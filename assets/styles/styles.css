@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    --main-text-color: rgb(68, 66, 66);
+    --main-font-size: 16px;
+    --user-card-photo-size: 150px;
+    --details-color-white: white;
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--main-font-size);
+    color: var(--main-text-color);
+    padding: 20px;
+    background-color: bisque;
+}
+
+.user-card-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-basis: 450px;
+    flex-grow: 1;
+}
+
+.user-card {
+    background-color: var(--details-color-white);
+    display: flex;
+    align-content: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: 1px solid red;
+    max-width: 850px;
+    width: 40%;
+    min-width: 300px;
+}
+
+.user-card-photo {
+    width: var(--user-card-photo-size);
+    height: var(--user-card-photo-size);
+    border: 3px solid var(--details-color-white);
+    border-radius: 50%;
+    box-shadow: 0 2px 5px grey;
+    object-fit: cover;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 300px;
+    flex-grow: 1;
+    height: 100%;
+    width: calc(100% - var(--user-card-photo-size) - 40px);
+}
+
+.user-name {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.user-name span {
+    font-weight: 900;
+}
+
+.user-proffesion {
+    margin-bottom: 10px;
+}
+
+.user-location {
+    margin-bottom: 20px;
+}
+
+.user-socials {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-socials-btn {
+    color: var(--details-color-white);
+    font-size: 1rem;
+    line-height: 2.5;
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 0 15px
+}
+
+.user-socials-btn:hover {
+    box-shadow: 0 0 2px grey;
+    cursor: pointer;
+}
+
+.user-socials-list {
+    font-size: 1rem;
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+    margin-top: 10;
+}
+
+.user-socials-item a {
+    text-decoration: none;
+    color: orangered;
+}
