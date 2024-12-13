@@ -21,8 +21,7 @@ body {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    flex-basis: 450px;
-    flex-grow: 1;
+    flex: 1 0 450px;
 }
 
 .user-card {
@@ -51,8 +50,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-basis: 300px;
-    flex-grow: 1;
+    flex: 1 0 300px;
     height: 100%;
     width: calc(100% - var(--user-card-photo-size) - 40px);
 }
