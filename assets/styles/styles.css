@@ -27,11 +27,8 @@ body {
 .user-card {
     background-color: var(--details-color-white);
     display: flex;
-    align-content: flex-start;
     gap: 30px;
-    flex-wrap: wrap;
     padding: 20px;
-    border: 1px solid red;
     max-width: 850px;
     width: 40%;
     min-width: 300px;
@@ -50,7 +47,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 1 0 300px;
+    flex: 1 1 300px;
     height: 100%;
     width: calc(100% - var(--user-card-photo-size) - 40px);
 }
@@ -106,4 +103,15 @@ body {
 .user-socials-item a {
     text-decoration: none;
     color: orangered;
+}
+
+@media (max-width: 1244px) {
+    .user-card {
+        flex-wrap: wrap;
+    }
+
+    .user-info {
+        height: calc(100% - var(--user-card-photo-size) - 30px);
+        flex: 1 0 260px;
+    }
 }
